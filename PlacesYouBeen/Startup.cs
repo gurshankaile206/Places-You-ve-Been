@@ -25,6 +25,7 @@ namespace PlacesYouBeen
 
     public void Configure(IApplicationBuilder app) //shows how to route URLs and configure exceptions
     {
+      app.UseStaticFiles();
       app.UseDeveloperExceptionPage();
       app.UseRouting();
 

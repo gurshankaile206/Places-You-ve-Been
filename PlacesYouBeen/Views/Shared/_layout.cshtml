@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place You've Been</title>
+
+    <link href="~/css/Index.css" rel="stylesheet" type="text/css">
+
+    <!-- SUPER IMPORTANT TO START WITH ~/ when referencing file in the wwwroot folder -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/places/new'>Add another place</a></li>
+        <li><a href='/places'>View all places</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      @RenderBody()
+    </main>
+  </body>
+</html>

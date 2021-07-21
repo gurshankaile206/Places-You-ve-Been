@@ -21,9 +21,9 @@ namespace PlacesYouBeen.Controllers
     }
 
     [HttpPost("/places")]
-    public ActionResult Create(string cityName)
+    public ActionResult Create(string cityName, string picture)
     {
-      Place myPlace = new Place(cityName);
+      Place myPlace = new Place(cityName, picture);
       return RedirectToAction("Index");
     }
   }

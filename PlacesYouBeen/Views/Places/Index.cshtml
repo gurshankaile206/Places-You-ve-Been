@@ -1,3 +1,6 @@
+@{
+  Layout = "_Layout";
+}
 @using PlacesYouBeen.Models;
 
 <h1>List of Places I've Been</h1>
@@ -8,7 +11,8 @@
 <ul>
   @foreach (Place item in Model)
   {
-    <li>@item.CityName</li>   
+    <li>@item.CityName</li>
+    <li><img src="@item.Picture"></li>   
   }
 </ul>
 <a href="/places/new">Add a new place!</a>
